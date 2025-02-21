@@ -29,6 +29,9 @@ function setup() {
     const controls = new THREE.OrbitControls(camera, canvas);
     controls.damping = 0.2;
     controls.autoRotate = false;
+    controls.enableRotate = false;
+    controls.enablePan = false;
+
 
     // Update projection matrix based on the windows size.
     function resize() {
