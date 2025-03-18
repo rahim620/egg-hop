@@ -10,10 +10,20 @@
       /* Disable scrolling */
       overflow: hidden;
     }
+
+    #info {
+      position: absolute;
+      top: 15px;
+      width: 100%;
+      text-align: center;
+      z-index: 100;
+      display:block;
+    }
   </style>
 </head>
 
 <body>
+  <div id="info">Click anywhere</div>
   <canvas id="webglcanvas"></canvas>
   <script src="js/WebGL.js"></script>
   <script src="js/three.min.js"></script>
